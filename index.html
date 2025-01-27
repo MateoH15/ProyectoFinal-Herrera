@@ -4,11 +4,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaSflix</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <title>Calculadora conversora de divisas</title>
 </head>
 
 <body>
+    <h1>Conversor de divisas</h1>
+    <div class="container">
+        <div class="container-calculadora">
+            <div class="container-importe">
+                <label for="">Importe: </label>
+                <input type="text" name="" id="">
+            </div>
+            <div class="container-moneda-principal">
+                <label for="">De:</label>
+                <select name="" id="">
+                    <option value="USD">Dólar Estadounidense - USD</option>
+                    <option value="MXN">Peso Mexicano - MXN</option>
+                    <option value="ARS">Peso Argentino - ARS</option>
+                    <option value="EUR">Euro - EUR</option>
+                    <option value="JPY">Yen Japonés - JPY</option>
+                    <option value="GBP">Libra Esterlina - GBP</option>
+                    <option value="CHF">Franco Suizo - CHF</option>
+                    <option value="AUD">Dólar Australiano - AUD</option>
+                    <option value="CAD">Dólar Canadiense - CAD</option>
+                    <option value="SEK">Corona Sueca - SEK</option>
+                    <option value="HKD">Dólar de Hong Kong - HKD</option>
+                    <option value="NOK">Corona Noruega - NOK</option>
+                </select>
+            </div>
+            <div class="container-moneda-a-convertir">
+                <label for="">A:</label>
+                <select name="" id="">
+                    <option value="USD">Dólar Estadounidense - USD</option>
+                    <option value="MXN">Peso Mexicano - MXN</option>
+                    <option value="ARS">Peso Argentino - ARS</option>
+                    <option value="EUR">Euro - EUR</option>
+                    <option value="JPY">Yen Japonés - JPY</option>
+                    <option value="GBP">Libra Esterlina - GBP</option>
+                    <option value="CHF">Franco Suizo - CHF</option>
+                    <option value="AUD">Dólar Australiano - AUD</option>
+                    <option value="CAD">Dólar Canadiense - CAD</option>
+                    <option value="SEK">Corona Sueca - SEK</option>
+                    <option value="HKD">Dólar de Hong Kong - HKD</option>
+                    <option value="NOK">Corona Noruega - NOK</option>
+                </select>
+            </div>
+        </div>
 
+        <div class="boton-convertir">
+            <button>Convertir</button>
+        </div>
+
+        <div class="resultados">
+
+        </div>
+
+        <div class="historial">
+            <h3>Historial de conversiones</h3>
+            <div id="lista-historial"></div>
+            <button id="borrar-historial">Borrar historial</button>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
